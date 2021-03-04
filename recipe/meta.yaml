@@ -1,0 +1,68 @@
+{% set name = "enterprise" %}
+{% set version = "3.0.0" %}
+
+package:
+    name: "{{ name|lower }}"
+    version: "{{ version }}"
+
+source:
+    git_url: https://github.com/nanograv/enterprise.git
+    # git_rev:
+    git_depth: 1
+
+build:
+    number: 1
+
+# test:
+#     source_files:
+#         - tests/
+#     commands:
+#         # run tests for enterprise here:
+#         # or we could make a test.sh script
+
+requirements:
+    build:
+        - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - {{ compiler('fortran') }}
+        - autoconf
+        - automake
+        - libtool
+        - curl
+        - Cython
+
+    host:
+        - python
+        - numpy
+        - scipy
+        - Cython
+        - basemap
+        - astropy
+        - ephem
+        - mpi4py
+        - suitesparse
+        - healpy
+        - scikit-sparse
+        - jplephem
+        - tempo2
+        - libstempo
+        - pint-pulsar
+
+    run:
+        # check that each of these are actually necessary:
+        - python
+        - numpy
+        - scipy
+        - Cython
+        - basemap
+        - astropy
+        - ephem
+        - mpi4py
+        - suitesparse
+        - healpy
+        - scikit-sparse
+        - jplephem
+        - tempo2
+        - libstempo
+        - pint-pulsar
+
