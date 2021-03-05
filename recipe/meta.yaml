@@ -32,9 +32,14 @@ requirements:
         - Cython
 
     host:
-        - python
+        - python =3.8
         - numpy
         - scipy
+        - matplotlib
+        - pandas
+        - jupyter
+        - notebook
+        - h5py
         - Cython
         - basemap
         - astropy
@@ -47,12 +52,20 @@ requirements:
         - tempo2
         - libstempo
         - pint-pulsar
+        - corner
+        - acor
+        - ptmcmcsampler
 
     run:
         # check that each of these are actually necessary:
-        - python
+        - python =3.8
         - numpy
         - scipy
+        - matplotlib
+        - pandas
+        - jupyter
+        - notebook
+        - h5py
         - Cython
         - basemap
         - astropy
@@ -65,4 +78,7 @@ requirements:
         - tempo2
         - libstempo
         - pint-pulsar
+        - corner
+        - acor
+        - ptmcmcsampler
 
