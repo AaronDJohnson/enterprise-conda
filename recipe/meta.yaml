@@ -14,71 +14,52 @@ build:
     number: 1
 
 # test:
-#     source_files:
-#         - tests/
-#     commands:
-#         # run tests for enterprise here:
-#         # or we could make a test.sh script
+    # source_files:
+    #     - tests/
+    # commands:
+    #     # run tests for enterprise here:
+    #     # or we could make a test.sh script
 
 requirements:
-    build:
-        - {{ compiler('cxx') }}
-        - {{ compiler('c') }}
-        - {{ compiler('fortran') }}
-        - autoconf
-        - automake
-        - libtool
-        - curl
-        - Cython
 
     host:
-        - python =3.8
-        - numpy
-        - scipy
+        - python =3.7
         - matplotlib
         - pandas
         - jupyter
         - notebook
         - h5py
-        - Cython
         - basemap
         - astropy
         - ephem
         - mpi4py
-        - suitesparse
-        - healpy
-        - scikit-sparse
-        - jplephem
-        - tempo2
-        - libstempo
-        - pint-pulsar
-        - corner
-        - acor
-        - ptmcmcsampler
+        - conda-forge::suitesparse
+        - conda-forge::healpy
+        - conda-forge::scikit-sparse
+        - conda-forge::jplephem
+        - conda-forge::libstempo
+        - conda-forge::pint-pulsar
+        - conda-forge::corner
+        - aarondjohnson::ptmcmcsampler
 
     run:
         # check that each of these are actually necessary:
-        - python =3.8
-        - numpy
-        - scipy
+        - python =3.7
         - matplotlib
         - pandas
         - jupyter
         - notebook
         - h5py
-        - Cython
         - basemap
         - astropy
         - ephem
         - mpi4py
-        - suitesparse
-        - healpy
-        - scikit-sparse
-        - jplephem
-        - tempo2
-        - libstempo
-        - pint-pulsar
-        - corner
-        - acor
-        - ptmcmcsampler
+        - conda-forge::suitesparse
+        - conda-forge::healpy
+        - conda-forge::scikit-sparse
+        - conda-forge::jplephem
+        - conda-forge::libstempo
+        - conda-forge::pint-pulsar
+        - conda-forge::corner
+        - aarondjohnson::ptmcmcsampler
 
