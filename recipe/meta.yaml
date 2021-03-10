@@ -37,7 +37,7 @@ requirements:
         - conda-forge::healpy
         - conda-forge::scikit-sparse
         - conda-forge::jplephem
-        - conda-forge::libstempo
+        - aarondjohnson::libstempo
         - conda-forge::pint-pulsar
         - conda-forge::corner
         - aarondjohnson::ptmcmcsampler
